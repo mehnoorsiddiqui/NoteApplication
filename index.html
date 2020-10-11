@@ -16,13 +16,9 @@
             aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">Magical notes</a>
+        <a class="navbar-brand" href="#">Your Notes</a>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input id="searchTxt" class="form-control mr-sm-2" type="search" placeholder="Search"
@@ -33,14 +29,15 @@
     </nav>
 
     <div class="container my-3 ">
-        <h1>Welcome to Magical notes</h1>
+        <h1>My NoteBook</h1>
         <div class="card border-secondary">
             <div class="card-body">
-                <h5 class="card-title">Add Note</h5>
+                <input type="text" class="form-control" id="addTitle"  placeholder="Untitled">
+                <br>
                 <div class="form-group">
-                    <textarea class="form-control border-info" id="addTxt" rows="3"></textarea>
+                    <textarea class="form-control border" placeholder="Write your notes here...." id="addTxt" rows="6"></textarea>
                 </div>
-                <button href="#" id="addBtn" class="btn btn-primary">Add to Note</button>
+                <button href="#" id="addBtn" class="btn btn-success">Add Note</button>
             </div>
         </div>
         <hr>
